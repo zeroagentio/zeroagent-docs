@@ -6,7 +6,8 @@
     "light": "/assets/logo/light.svg",
     "href": "https://zeromagic.cloud/"
   },
-  "theme": "prism",
+  "theme": "prism", 
+  "modeToggle": {"default": "dark"},
   "favicon": "/assets/logo/logo.svg",
   "colors": {
     "primary": "#212121",
@@ -16,7 +17,7 @@
 
   "analytics": {
     "ga4": {
-        "measurementId": "G-GP1H5Y0TEP"
+        "measurementId": "G-RXKHVX599M"
     }
   },
   "seo": {
