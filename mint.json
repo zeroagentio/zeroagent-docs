@@ -81,7 +81,8 @@
           "pages": [
             "tools/all-tools/github",
             "tools/all-tools/google-meet",          
-            "tools/all-tools/slack"            
+            "tools/all-tools/slack" ,           
+            "tools/all-tools/todoist"            
           ]
          }
       ]
