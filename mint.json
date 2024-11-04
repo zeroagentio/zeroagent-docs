@@ -4,7 +4,7 @@
   "logo": {
     "dark": "/assets/logo/dark.svg",
     "light": "/assets/logo/light.svg",
-    "href": "https://zeromagic.cloud/"
+    "href": "https://zeroagent.io/"
   },
   "theme": "prism", 
   "modeToggle": {"default": "dark"},
@@ -40,12 +40,12 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:zeromagic.cloud@gmail.com"
+      "url": "mailto:support@zeroagent.io"
     }
   ],
   "topbarCtaButton": {
     "name": "Get Started",
-    "url": "https://console.zeromagic.cloud/"
+    "url": "https://forms.zohopublic.com/zeromagic/form/ZeromagicWaitlistForm/formperma/AgfMAJ7hBxvNYCAsKvd-OskB1AOol9hrUNig-l8nN4I"
   }, 
   
  "feedback" : {
@@ -79,7 +79,9 @@
         {
           "group": "All Tools",
           "pages": [
-            "tools/all-tools/github"
+            "tools/all-tools/github",
+            "tools/all-tools/google-meet",          
+            "tools/all-tools/slack"            
           ]
          }
       ]
@@ -95,8 +97,8 @@
   
   ],
   "footerSocials": {
-    "github": "https://github.com/teamzeromagic",
-    "linkedin": "https://www.linkedin.com/company/zeromagic",
+    "github": "https://github.com/zeroagentio",
+    "linkedin": "https://www.linkedin.com/company/zeroagent",
     "youtube" : "https://www.youtube.com/@zeromagic-cloud"
   }
 }

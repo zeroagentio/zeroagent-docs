@@ -2,6 +2,7 @@
 title: Github
 description: GitHub is a web-based platform for version control and collaboration on software development projects. 
 mode: wide
+icon: github
 --- 
 
 ## 🔗 How to Connect
@@ -13,15 +14,40 @@ mode: wide
 ## Supported Actions
 The following table outlines the supported actions and example prompts for our GitHub integration:
 
+1. ### Branch Management
+
 | Action          | Description                                         | Example Prompt                                                 |
 | :-------------- | :--------------------------------------------------- | :---------------------------------------------------------------- |
-|  **Create Issue**  | Create a new issue in your GitHub repository        | `Create issue in repo "my-project" with title "Fix bug in login feature"` |
-| **Close Issue**  | Close an existing issue in your GitHub repository   | `Close issue #123 in repo "my-project"`                           |
-| **Create Pull Request** | Create a new pull request in your GitHub repository | `Create pull request from branch "feature/new-login" to "main" in repo "my-project"` |
-| **Merge Pull Request** | Merge a pull request in your GitHub repository    | `Merge pull request #456 in repo "my-project"`                     |
-| **Add Label**     | Add a label to an issue or pull request            | `Add label "bug" to issue #123 in repo "my-project"`               |
-| **Assign User**   | Assign a user to an issue or pull request          | `Assign user "@john-doe" to issue #123 in repo "my-project"`        |
+|  **Get Branch**  | Retrieve details of a specific branch        | `Get branch "main" details in repo "my-project"` |
+|  **List Branches**  | List all branches in a repository        | `List branches in repo "my-project"` |
+|  **Merge Branch**  | Merge two branches in a repository        | `Merge branch "feature/new-login" into "main" in repo "my-project"` |
+|  **Rename Branch**  | Rename an existing branch        | `Rename branch "old-name" to "new-name" in repo "my-project` |
 
+2. ### Collaboration
+
+| Action          | Description                                         | Example Prompt                                                 |
+| :-------------- | :--------------------------------------------------- | :---------------------------------------------------------------- |
+|  **Add Repository Collaborator**  | Invite a user to collaborate on a repository        | `Add collaborator "@jane-doe" to repo "my-project"` |
+|  **Check User Repository Collaborator**  | Verify if a user is a collaborator        | `Check if "@john-doe" is collaborator in repo "my-project"` |
+|  **Get User's Repository Permission**  | Retrieve a user's permission level        | `Get permission level of "@john-doe" in repo "my-project"` |
+|  **List Repository Collaborators**  | List all collaborators in a repository      | `List collaborators in repo "my-project"` |
+|  **Remove Repository Collaborator**  | Remove a collaborator from a repository      | `Remove collaborator "@jane-doe" from repo "my-project"` |
+
+3. ### Issue Management
+
+| Action          | Description                                         | Example Prompt                                                 |
+| :-------------- | :--------------------------------------------------- | :---------------------------------------------------------------- |
+|  **Create Issue**  | Create a new issue in a repository        | `Create issue in repo "my-project" with title "Fix bug"` |
+|  **Get Issue**  | Retrieve details of a specific issue        | `Get issue #123 details in repo "my-project"` |
+|  **List User Assigned Issues**  | List issues assigned to a user        | `List issues assigned to "@john-doe" in repo "my-project"` |
+|  **Update Issue**  | Update an existing issue        | `Update issue #123 title to "New title" in repo "my-project"` |
+
+4. ### Commit History
+
+
+| Action          | Description                                         | Example Prompt                                                 |
+| :-------------- | :--------------------------------------------------- | :---------------------------------------------------------------- |
+|  **List Commits**  | List commit history in a repository        | `List commits in branch "main" of repo "my-project"` |
 
 ### Troubleshooting
 
