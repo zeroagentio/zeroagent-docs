@@ -1,0 +1,40 @@
+---
+title: Airtable
+description: Flexible platform that combines spreadsheets and databases for seamless collaboration and organization.
+mode: wide 
+--- 
+ 
+## Supported Actions
+The following table outlines the supported actions and example prompts for our Typeform integration:
+ 
+1. ### Airtable Base and User Management 
+
+| Action          | Description                                         | Example Prompt                                                 |
+| :-------------- | :--------------------------------------------------- | :---------------------------------------------------------------- |
+| **Get Details of Current User** | Retrieves information about the currently logged-in user | `Get my user details` |
+| **List All Bases** | Retrieves a list of all Airtable bases the user has access to | `List all my bases` |
+
+
+2. ### Base Structure and Content
+
+| Action          | Description                                         | Example Prompt                                                 |
+| :-------------- | :--------------------------------------------------- | :---------------------------------------------------------------- |
+| **Get Tables in Base** | Retrieves a list of tables in a specified Airtable base. | `List tables in 'University' base` |
+| **List Records in Table** | Retrieves a list of records in a specified table. |  `Show table records in 'Students' table` |
+| **Create Table** | Creates a new table in a specified Airtable base. | `Create table called 'Projects' in 'University' base` |
+| **List Views in Base** | Retrieves a list of views in a specified Airtable base. | Show 'University' base views |
+
+3. ### Collaboration and Webhooks
+
+| Action          | Description                                         | Example Prompt                                                 |
+| :-------------- | :--------------------------------------------------- | :---------------------------------------------------------------- |
+| **List Base Collaborators** | Retrieves a list of collaborators for a specified Airtable base. | `List collaborators in 'University' base ` |
+| **List Webhooks for Base** | Retrieves a list of webhooks for a specified Airtable base. | 'List webhooks for University base' |
+| **Delete Webhook** | Deletes a specified webhook. | `Delete webhook ID 'acb1233'` |
+| **Refresh Webhook** | Refreshes a specified webhook. | `Refresh webhook ID 'acb1233'` |
+
+4. ### Data Management
+
+| Action          | Description                                         | Example Prompt                                                 |
+| :-------------- | :--------------------------------------------------- | :---------------------------------------------------------------- |
+| **Delete Single Record in Table** | Deletes a single record in a specified table. | `Remove data 'Max' record from 'Students' table in 'University' base` |

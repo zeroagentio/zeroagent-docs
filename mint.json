@@ -24,13 +24,13 @@
   "indexHiddenPages": true
   },
   "metadata": {
-    "og:description": "ZeroMagic is a AI powered low-code platform that builds backend microservices super fast. Now building, deploying & scaling your application happen in minutes, saving you time and getting things done faster",
-    "og:url": "https://docs.zeromagic.cloud",
-    "og:image": "/assets/logo/banner.svg",
+    "og:description": "Simplify your day-to-day business operations with AI Agents for Free. Connect, manage, and execute tasks across multiple apps in one platform using simple chat prompts. Work smarter by eliminating repetitive work!",
+    "og:url": "https://docs.zeroagent.io",
+    "og:image": "/assets/images/banner.png",
     "og:site_name": "ZeroAgent Documentation",
     "og:type": "website",
-    "og:logo": "https://zeromagic.cloud/static/media/logo.c549b22984076cb04644dd0289f6d141.svg",
-    "og:title": "ZeroAgent Documentation",
+    "og:logo": "/assets/logo/logo.svg",
+    "og:title": "Get started Now - Zeroagent Documentation",
     "og:image:width": "1200",
     "og:image:height": "630"
   },
@@ -45,7 +45,7 @@
   ],
   "topbarCtaButton": {
     "name": "Get Started",
-    "url": "https://forms.zohopublic.com/zeromagic/form/ZeromagicWaitlistForm/formperma/AgfMAJ7hBxvNYCAsKvd-OskB1AOol9hrUNig-l8nN4I"
+    "url": "https://app.zeroagent.io/"
   }, 
   
  "feedback" : {
@@ -58,7 +58,7 @@
     {
       "name": "Tutorials",
       "icon": "circle-play",
-      "url": "https://www.youtube.com/@zeromagic-cloud"
+      "url": "https://www.youtube.com/@zeroagentio"
     }
   ],
   
@@ -79,13 +79,19 @@
         {
           "group": "All Tools",
           "pages": [
+            "tools/all-tools/airtable",
+            "tools/all-tools/canva",
+            "tools/all-tools/calendly",
+            "tools/all-tools/capsule",
+            "tools/all-tools/dropbox",
+            "tools/all-tools/discord",
             "tools/all-tools/github",
+            "tools/all-tools/gmail",
             "tools/all-tools/google-meet",          
             "tools/all-tools/slack" ,           
+            "tools/all-tools/notion",
             "tools/all-tools/todoist",
             "tools/all-tools/typeform",
-            "tools/all-tools/gmail",
-            "tools/all-tools/notion",
             "tools/all-tools/zoom"
           ]
          }
@@ -104,6 +110,6 @@
   "footerSocials": {
     "github": "https://github.com/zeroagentio",
     "linkedin": "https://www.linkedin.com/company/zeroagent",
-    "youtube" : "https://www.youtube.com/@zeromagic-cloud"
+    "youtube" : "https://www.youtube.com/@zeroagentio"
   }
 }
