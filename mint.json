@@ -72,28 +72,31 @@
       ]
     },
     {
-      "group": "Tools",
+      "group": "Apps",
       "pages": [
-        "tools/introduction",
-        "tools/connection",
+        "apps/introduction",
+        "apps/connection",
         {
-          "group": "All Tools",
+          "group": "All Apps",
           "pages": [
-            "tools/all-tools/airtable",
-            "tools/all-tools/calendly",
-            "tools/all-tools/canva",
-            "tools/all-tools/capsule",
-            "tools/all-tools/discord",
-            "tools/all-tools/dropbox",
-            "tools/all-tools/github",
-            "tools/all-tools/gitlab",
-            "tools/all-tools/gmail",
-            "tools/all-tools/google-meet",          
-            "tools/all-tools/notion",
-            "tools/all-tools/slack" ,           
-            "tools/all-tools/todoist",
-            "tools/all-tools/typeform",
-            "tools/all-tools/zoom"
+            "apps/all-apps/airtable",
+            "apps/all-apps/calendly",
+            "apps/all-apps/canva",
+            "apps/all-apps/capsule",
+            "apps/all-apps/discord",
+            "apps/all-apps/dribble",
+            "apps/all-apps/dropbox",
+            "apps/all-apps/github",
+            "apps/all-apps/gitlab",
+            "apps/all-apps/gmail",
+            "apps/all-apps/google-meet",          
+            "apps/all-apps/miro",
+            "apps/all-apps/netlify",
+            "apps/all-apps/notion",
+            "apps/all-apps/slack" ,           
+            "apps/all-apps/todoist",
+            "apps/all-apps/typeform",
+            "apps/all-apps/zoom"
           ]
          }
       ]
