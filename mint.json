@@ -19,7 +19,7 @@
     "ga4": {
         "measurementId": "G-RXKHVX599M"
     }
-  },
+  }, 
   "seo": {
   "indexHiddenPages": true
   },
@@ -68,45 +68,31 @@
       "pages": [
         "overview", 
         "quickstart",
-        "human-in-loop"
+        "use-case",
+        "knowledge-base"
       ]
     },
     {
-      "group": "Apps",
-      "pages": [
-        "apps/introduction",
-        "apps/connection",
-        {
-          "group": "All Apps",
-          "pages": [
-            "apps/all-apps/airtable",
-            "apps/all-apps/calendly",
-            "apps/all-apps/canva",
-            "apps/all-apps/capsule",
-            "apps/all-apps/discord",
-            "apps/all-apps/dribble",
-            "apps/all-apps/dropbox",
-            "apps/all-apps/github",
-            "apps/all-apps/gitlab",
-            "apps/all-apps/gmail",
-            "apps/all-apps/google-meet",          
-            "apps/all-apps/miro",
-            "apps/all-apps/netlify",
-            "apps/all-apps/notion",
-            "apps/all-apps/slack" ,           
-            "apps/all-apps/todoist",
-            "apps/all-apps/typeform",
-            "apps/all-apps/zoom"
-          ]
-         }
+      "group": "Online Store",
+      "pages": [ 
+        "store/shopify",
+        "store/custom-store"
+      ]
+    },
+    {
+      "group": "Make Smarter",
+      "pages": [ 
+        "make-smarter/docs",
+        "make-smarter/blogs",
+        "make-smarter/lander-sites",
+        "make-smarter/faq"
       ]
     },
  
     {
       "group": "Materials",
       "pages": [
-        "materials/FAQs", 
-        "materials/change-logs"
+        "materials/faqs"
       ]
     }
   

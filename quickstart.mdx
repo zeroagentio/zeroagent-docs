@@ -5,53 +5,113 @@ icon: bolt
 ---
 import { Banner } from '/snippets/components.mdx';
 
-Welcome to ZeroAgent! This Quickstart guide will help you seamlessly connect to GitHub and start automating your tasks. 
-Follow these simple steps to get started:
+# 1. Shopify
 
-### Step 1: Access the ZeroAgent Console
-- **Log in** to your ZeroAgent account. 
+This Quickstart guide will help you connect Zeroagent to Shopify Store and start assisting your customers with Shopping Agents. 
 
-### Step 2: Select GitHub
-- Check the **Apps** available in sidebar, select `GitHub` from the list of integrations.
+### Step 1: Access the Zeroagent Console
+- **Log in** to your Zeroagent account. 
 
-### Step 3: Click the Setup Button
-- Click the **Setup** button shown in the page. This action will prompt you to initiate the authorization process.
+### Step 2: Select Type
+- Select `Shopify` and enter your `shopify store name`.
 
-### Step 4: Authorize ZeroAgent
+```title="example"
+https://<yourstore>.myshopify.com
+```
+<Frame>   
+![add-store](/assets/images/add-site.png)
+</Frame>   
 
-- You will be redirected to the GitHub authorization page.
-- **Log in** to your GitHub account.
-- Review the permissions requested by ZeroAgent and click **Authorize** to grant access.
+### Step 3: Authorize Store Acess
 
-### Step 5: Verify Connection
+- You will be redirected to authorization page. This will install our `zeroagent shopify extension` to your shopify store.
 
-- After authorization, you will be redirected back to ZeroAgent.
-- A confirmation message will appear, indicating that GitHub has been successfully connected.
-- You can also check the status of the connection on the top. 
+### Step 4: AI Knowledge Base
+
+- All your `Shopify Store Products` are added to the AI Knowledge Base. You can also add FAQs, and other addtional information about your store.
+
+<Frame>   
+![knowledge-base](/assets/images/knowledge-base.png)
+</Frame>   
+
+<Note>
+You can only use **pdf files** to add additional information about your store.
+</Note>
+
+### Step 5: Customise AI Chat Widget
+- In the **Chat Widget** section, you can update the `store name` , `store placeholder` and `store theme`.
 
 ### Step 6: Start Using Your AI Agent
 
-- Now that GitHub is connected, you can start using your AI agent to automate tasks.
-- For example, you can type the following prompt to create a new GitHub repository:
-- Prompt: "Create a GitHub repo named 'ZeroAgent-Demo' with a description 'This is my new repository'"
-- Your AI agent will handle the request and create the repository for you.
+- Your AI Shopping Assistant is deployed on your store and is ready to help customers while shopping.
+- AI Shopping Assistant will provide personalized product recommendations, handle orders, answer queries, and more for your customers.
+
+
+# 2. Other Webpages
+
+This Quickstart guide will help you connect Zeroagent to Shopify Store and start assisting your customers with Shopping Agents. 
+
+### Step 1: Access the Zeroagent Console
+- **Log in** to your Zeroagent account. 
+
+### Step 2: Select Type
+- Select `Website` and enter your `domain name` or custom coded `store domain name`.
+
+<Frame>   
+![add-webpage](/assets/images/add-webpage.png)
+</Frame>   
+
+### Step 3: Embed Script Code in HTML
+
+Use the below code to embed the chat widget script code in your applications HTML file.
+
+```js
+<div id="zeroagent-ai-widget"></div>
+<script src="https://cdn.jsdelivr.net/npm/zeroagent@latest/dist/index.js"></script>
+<script>
+Zeroagent('<YOUR_APP_ID>', '<YOUR_APP_KEY>');
+</script>
+```
+
+### Step 4: AI Knowledge Base
+
+- Our system **automatically crawls** all the URLs on your website and adds the content to the AI Knowledge Base. You can view all the crawled pages in the Knowledge Base section.
+
+- Additionally, you can upload your own data to the AI Knowledge Base through the Files section.
+
+<Note>
+To use products as part of the AI Knowledge Base, ensure you upload them in the specified **XLS** format
+</Note>
+
+<Frame>   
+![files-webpage](/assets/images/files-webpage.png)
+</Frame>   
+
+
+### Step 5: Customise AI Chat Widget
+- In the **Chat Widget** section, you can update the `store name` , `store placeholder` and `store theme`.
+
+### Step 6: Start Using Your AI Agent
+
+- Your AI Agent is deployed on your webpages and is ready to help customers while users. AI Agents will assits users on your queries & answers them, and more for your users.
+
 
 ## Explore Resources
 
 <CardGroup cols={2}>
   
   <Card
-    title="Human In Loop"
-    icon="microchip-ai"
-    href="/human-in-loop"
+    title="Use Case"
+    icon="brackets-curly"
+    href="/use-case"
   >
     Ensure accuracy and control over the actions
     </Card>
 
  <Card
-    title="Apps Supported"
-    icon="screwdriver-wrench"
-    href="/apps/introduction"
+    title="Knowledge Base"
+    icon="folder"
+    href="/knowledge-base"
   > 
   Learn how to get started with business apps
   </Card> 

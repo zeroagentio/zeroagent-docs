@@ -1,0 +1,111 @@
+---
+title: FAQ & Help Center
+sidebarTitle: FAQ & Help Center
+description: Increase Conversions and Engagement with Zeroagent
+icon: circle-question
+---
+
+Zeroagent acts as knowledge based agents, helping to supercharge your documentation, help center, blogs, and landing pages. It ensures a seamless and personalized experience for your users, while reducing your workload and maximizing engagement. 
+
+- 🤝 **Instant Responses:** Provide immediate, AI-driven answers to customer queries, reducing wait times and improving satisfaction.
+- 🎯 **Contextual Support:** Zeroagent understands user questions and provides precise, relevant answers from your help center articles.
+- 📊 **Actionable Insights:** Analyze user interactions to identify content gaps and improve your help center.
+
+Zeroagent transforms your help center into a 24/7 customer support powerhouse
+
+## Connecting with Docs 
+
+<Steps>
+  <Step title="🛠️ Select site">
+     Click `add site` and choose `website`. 
+  </Step>
+  <Step title="🔑 Embed SDK">
+    Add the `script code` to your application. 
+
+    <CodeGroup>
+
+```html HTML
+<div id="zeroagent-ai-widget"></div>
+<script src="https://cdn.jsdelivr.net/npm/zeroagent@latest/dist/index.js"></script>
+<script>
+Zeroagent('<YOUR_APP_ID>', '<YOUR_APP_KEY>');
+</script>
+```
+
+```js React
+// src/index.html
+
+<div id="zeroagent-ai-widget"></div>
+<script src="https://cdn.jsdelivr.net/npm/zeroagent@latest/dist/index.js"></script>
+<script>
+Zeroagent('<YOUR_APP_ID>', '<YOUR_APP_KEY>');
+</script>
+```
+
+```js Next
+// app/layout.jsx
+ 
+import Script from "next/script"; 
+
+...
+
+<html lang="en">
+  <body className={`${geistSans.variable} ${geistMono.variable}`}>
+    {children}
+
+  // zeroagent widget code 
+  <div id="zeroagent-ai-widget"></div>
+  <Script
+    src="https://cdn.jsdelivr.net/npm/zeroagent@latest/dist/index.js"
+    strategy="beforeInteractive"
+  />
+  <Script
+    id="zeroagent-init"
+    strategy="afterInteractive"
+    dangerouslySetInnerHTML={{
+      __html: ` 
+        Zeroagent('<YOUR_APP_ID>', '<YOUR_APP_KEY>');
+      `,
+    }}
+  /> 
+
+  </body>     
+</html>
+```
+
+```js Vue
+// index.html
+
+<div id="zeroagent-ai-widget"></div>
+<script src="https://cdn.jsdelivr.net/npm/zeroagent@latest/dist/index.js"></script>
+<script>
+Zeroagent('<YOUR_APP_ID>', '<YOUR_APP_KEY>');
+</script>
+```
+
+</CodeGroup>
+ 
+  </Step>
+  <Step title="🗂️ Knowledge Base"> 
+  Our system `crawls` automatically all the pages of the website and adds them to AI knowledge base. You can also add `addtional information` as `pdf, xls`.
+
+   <Note>
+    Learn more about the [Knowledge Base](/knowledge-base).
+    </Note>
+
+  </Step>
+
+  <Step title="⚙️ Chat Setting"> 
+  Update your chat widget interface settings
+  </Step>
+
+   <Step title="✅ AI Assistant is Live"> 
+  Your AI Assistant is live and ready to assist users.
+  </Step>
+</Steps>
+
+Zeroagent turns static content into a dynamic, interactive assistant that empowers users, reduces support costs, and drives engagement. Transform the way you connect with your audience today!
+ 
+## Troubleshooting
+
+For any issues or errors, refer to our [FAQ](/materials/change-logs) or contact our [Support Team](mailto:support@zeroagent.io?subject=Feedback).

@@ -1,0 +1,103 @@
+---
+title: Custom Coded Store
+sidebarTitle: Custom Store
+description: Connect apps in a few steps, and your AI agent is ready to work
+icon: cart-shopping
+---
+
+If you have a online store with custom code, you can still integrate it with our Zeroagent and make your store smarter.
+
+## Connecting Custom Store 
+
+<Steps>
+  <Step title="🛠️ Select site">
+     Click `add site` and choose `website`. 
+  </Step>
+  <Step title="🔑 Embed SDK">
+    Add the `script code` to your application. 
+
+    <CodeGroup>
+
+```html HTML
+<div id="zeroagent-ai-widget"></div>
+<script src="https://cdn.jsdelivr.net/npm/zeroagent@latest/dist/index.js"></script>
+<script>
+Zeroagent('<YOUR_APP_ID>', '<YOUR_APP_KEY>');
+</script>
+```
+
+```js React
+// src/index.html
+
+<div id="zeroagent-ai-widget"></div>
+<script src="https://cdn.jsdelivr.net/npm/zeroagent@latest/dist/index.js"></script>
+<script>
+Zeroagent('<YOUR_APP_ID>', '<YOUR_APP_KEY>');
+</script>
+```
+
+```js Next
+// app/layout.jsx
+ 
+import Script from "next/script"; 
+
+...
+
+<html lang="en">
+  <body className={`${geistSans.variable} ${geistMono.variable}`}>
+    {children}
+
+  // zeroagent widget code 
+  <div id="zeroagent-ai-widget"></div>
+  <Script
+    src="https://cdn.jsdelivr.net/npm/zeroagent@latest/dist/index.js"
+    strategy="beforeInteractive"
+  />
+  <Script
+    id="zeroagent-init"
+    strategy="afterInteractive"
+    dangerouslySetInnerHTML={{
+      __html: ` 
+        Zeroagent('<YOUR_APP_ID>', '<YOUR_APP_KEY>');
+      `,
+    }}
+  /> 
+
+  </body>     
+</html>
+```
+
+```js Vue
+// index.html
+
+<div id="zeroagent-ai-widget"></div>
+<script src="https://cdn.jsdelivr.net/npm/zeroagent@latest/dist/index.js"></script>
+<script>
+Zeroagent('<YOUR_APP_ID>', '<YOUR_APP_KEY>');
+</script>
+```
+
+</CodeGroup>
+
+  </Step>
+  <Step title="🗂️ Knowledge Base"> 
+  You can add your `store products` as `xls` to AI Knowledge.
+
+   <Note>
+    Learn more about the [Knowledge Base](/knowledge-base).
+    </Note>
+
+  </Step>
+
+  <Step title="⚙️ Chat Setting"> 
+  Update your chat widget interface settings
+  </Step>
+
+   <Step title="✅ AI Store Assistant is Live"> 
+  Your AI Store Assistant is live and ready to assist customers.
+  </Step>
+</Steps>
+
+## Troubleshooting
+
+For any issues or errors, refer to our [FAQ](/materials/change-logs) or contact our [Support Team](mailto:support@zeroagent.io?subject=Feedback).
