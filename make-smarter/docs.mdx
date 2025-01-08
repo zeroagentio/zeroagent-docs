@@ -22,25 +22,67 @@ With Zeroagent, your docs become an interactive knowledge hub, empowering users 
   <Step title="🔑 Embed SDK">
     Add the `script code` to your application. 
 
-    <CodeGroup>
+<AccordionGroup>
+  <Accordion title="Gatsby">
+    Add the below code in your `src/pages/index.js` or `src/pages/index.tsx` of your Gatsby project.
 
-```javascript helloWorld.js
-console.log("Hello World");
-```
+      ```bash 
+      npm install zeroagent
+      ```
+        ```js 
+      import Zeroagent from 'zeroagent';
+      <Zeroagent appID={'<YOUR_APP_ID>'} appKey={'<YOUR_APP_KEY>'} />
+        ``` 
+  
+  </Accordion>
 
-```python hello_world.py
-print('Hello World!')
-```
+  <Accordion title="Docusaurus">
+    Add the below code in your `src/pages/index.js` or `src/pages/index.tsx` of your Docusaurus project.
+   
+       ```bash 
+      npm install zeroagent
+      ```
+        ```js 
+      import Zeroagent from 'zeroagent';
+      <Zeroagent appID={'<YOUR_APP_ID>'} appKey={'<YOUR_APP_KEY>'} />
+        ``` 
+      
+  </Accordion>
 
-```java HelloWorld.java
-class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
+  <Accordion title="MkDocs">
+    Create `zeroagent-init.js` inside `docs` folder. Add this js path file to your `mkdocs.yml`
+   
+       ```bash  mkdocs.yml
+    extra_javascript:
+      - zeroagent-init.js
+      ```
 
-</CodeGroup>
+      ```js zeroagent-init.js
+      document.addEventListener("DOMContentLoaded", function () {
+
+    const widgetDiv = document.createElement("div");
+    widgetDiv.id = "zeroagent-ai-widget";
+    document.body.appendChild(widgetDiv);
+  
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "https://cdn.jsdelivr.net/npm/zeroagent@latest/dist/index.js";
+    script.onload = function () {
+
+        Zeroagent("<YOUR_APP_ID>", "<YOUR_APP_KEY>");
+    };
+    document.body.appendChild(script);
+  });
+      ``` 
+      
+  </Accordion>
+  
+ 
+</AccordionGroup>
+
+<Info>
+You can also use [Hardcore method](/quickstart#step-3-embed-sdk-in-app) to embed SDK.
+</Info>
  
   </Step>
   <Step title="🗂️ Knowledge Base"> 

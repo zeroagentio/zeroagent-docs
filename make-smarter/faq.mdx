@@ -22,65 +22,50 @@ Zeroagent transforms your help center into a 24/7 customer support powerhouse
   <Step title="🔑 Embed SDK">
     Add the `script code` to your application. 
 
-    <CodeGroup>
+ <CodeGroup>
 
 ```html HTML
 <div id="zeroagent-ai-widget"></div>
-<script src="https://cdn.jsdelivr.net/npm/zeroagent@latest/dist/index.js"></script>
-<script>
+<script src="https://cdn.jsdelivr.net/npm/zeroagent@latest/dist/index.js" type="module" defer></script>
 Zeroagent('<YOUR_APP_ID>', '<YOUR_APP_KEY>');
 </script>
 ```
 
 ```js React
-// src/index.html
+// install package
+npm install zeroagent
 
-<div id="zeroagent-ai-widget"></div>
-<script src="https://cdn.jsdelivr.net/npm/zeroagent@latest/dist/index.js"></script>
-<script>
-Zeroagent('<YOUR_APP_ID>', '<YOUR_APP_KEY>');
-</script>
+// code
+import Zeroagent from 'zeroagent';
+<Zeroagent appID={'<YOUR_APP_ID>'} appKey={'<YOUR_APP_KEY>'} />
 ```
 
 ```js Next
-// app/layout.jsx
- 
-import Script from "next/script"; 
+// install package
+npm install zeroagent
 
-...
-
-<html lang="en">
-  <body className={`${geistSans.variable} ${geistMono.variable}`}>
-    {children}
-
-  // zeroagent widget code 
-  <div id="zeroagent-ai-widget"></div>
-  <Script
-    src="https://cdn.jsdelivr.net/npm/zeroagent@latest/dist/index.js"
-    strategy="beforeInteractive"
-  />
-  <Script
-    id="zeroagent-init"
-    strategy="afterInteractive"
-    dangerouslySetInnerHTML={{
-      __html: ` 
-        Zeroagent('<YOUR_APP_ID>', '<YOUR_APP_KEY>');
-      `,
-    }}
-  /> 
-
-  </body>     
-</html>
+// code
+'use client';
+import Zeroagent from 'zeroagent';
+<Zeroagent appID={'<YOUR_APP_ID>'} appKey={'<YOUR_APP_KEY>'} />
 ```
 
 ```js Vue
-// index.html
+// index.html [Recommended]
 
 <div id="zeroagent-ai-widget"></div>
-<script src="https://cdn.jsdelivr.net/npm/zeroagent@latest/dist/index.js"></script>
-<script>
+<script src="https://cdn.jsdelivr.net/npm/zeroagent@latest/dist/index.js" type="module" defer></script>
 Zeroagent('<YOUR_APP_ID>', '<YOUR_APP_KEY>');
 </script>
+
+(or)
+
+// peer-dependency: react package required
+npm install zeroagent react
+
+// code
+import Zeroagent from 'zeroagent';
+<Zeroagent appID={'<YOUR_APP_ID>'} appKey={'<YOUR_APP_KEY>'} />
 ```
 
 </CodeGroup>

@@ -61,17 +61,86 @@ This Quickstart guide will help you connect Zeroagent to Shopify Store and start
 ![add-webpage](/assets/images/add-webpage.png)
 </Frame>   
 
-### Step 3: Embed Script Code in HTML
+### Step 3: Embed SDK in App
 
 Use the below code to embed the chat widget script code in your applications HTML file.
 
-```js
+<CodeGroup>
+```js HTML
 <div id="zeroagent-ai-widget"></div>
-<script src="https://cdn.jsdelivr.net/npm/zeroagent@latest/dist/index.js"></script>
-<script>
+<script src="https://cdn.jsdelivr.net/npm/zeroagent@latest/dist/index.js" type="module" defer></script>
 Zeroagent('<YOUR_APP_ID>', '<YOUR_APP_KEY>');
 </script>
 ```
+
+```js Next
+// install package
+npm install zeroagent
+
+// code
+'use client';
+import Zeroagent from 'zeroagent';
+<Zeroagent appID={'<YOUR_APP_ID>'} appKey={'<YOUR_APP_KEY>'} />
+```
+
+```js Vue
+// index.html [Recommended]
+
+<div id="zeroagent-ai-widget"></div>
+<script src="https://cdn.jsdelivr.net/npm/zeroagent@latest/dist/index.js" type="module" defer></script>
+Zeroagent('<YOUR_APP_ID>', '<YOUR_APP_KEY>');
+</script>
+
+(or)
+
+// peer-dependency: react package required
+npm install zeroagent react
+
+// code
+import Zeroagent from 'zeroagent';
+<Zeroagent appID={'<YOUR_APP_ID>'} appKey={'<YOUR_APP_KEY>'} />
+```
+
+
+```js React
+// install package
+npm install zeroagent
+
+// code
+import Zeroagent from 'zeroagent';
+<Zeroagent appID={'<YOUR_APP_ID>'} appKey={'<YOUR_APP_KEY>'} />
+```
+
+```js React TS Hardcore 
+... 
+
+  useEffect(() => { 
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/zeroagent@latest/dist/index.js';
+    script.async = true;
+    script.onload = () => { 
+      if ((window as any).Zeroagent) {
+        (window as any).Zeroagent('<YOUR_APP_ID>', '<YOUR_APP_KEY>');
+      } else {
+        console.error('Zeroagent is undefined');
+      }
+    };
+    document.body.appendChild(script);
+
+    const widgetDiv = document.createElement('div');
+    widgetDiv.id = 'zeroagent-ai-widget';
+    document.body.appendChild(widgetDiv);
+
+    return () => { 
+      document.body.removeChild(script);
+      document.body.removeChild(widgetDiv);
+    };
+  }, []);
+
+... 
+
+```
+</CodeGroup>
 
 ### Step 4: AI Knowledge Base
 
