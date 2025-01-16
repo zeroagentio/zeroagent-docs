@@ -27,10 +27,10 @@ With Zeroagent, your docs become an interactive knowledge hub, empowering users 
     Add the below code in your `src/pages/index.js` or `src/pages/index.tsx` of your Gatsby project.
 
       ```bash 
-      npm install zeroagent
+      npm install @zeroagent/js
       ```
         ```js 
-      import Zeroagent from 'zeroagent';
+      import Zeroagent from '@zeroagent/js';
       <Zeroagent appID={'<YOUR_APP_ID>'} appKey={'<YOUR_APP_KEY>'} />
         ``` 
   
@@ -40,10 +40,10 @@ With Zeroagent, your docs become an interactive knowledge hub, empowering users 
     Add the below code in your `src/pages/index.js` or `src/pages/index.tsx` of your Docusaurus project.
    
        ```bash 
-      npm install zeroagent
+      npm install @zeroagent/js
       ```
         ```js 
-      import Zeroagent from 'zeroagent';
+      import Zeroagent from '@zeroagent/js';
       <Zeroagent appID={'<YOUR_APP_ID>'} appKey={'<YOUR_APP_KEY>'} />
         ``` 
       
@@ -66,7 +66,7 @@ With Zeroagent, your docs become an interactive knowledge hub, empowering users 
   
     const script = document.createElement("script");
     script.async = true;
-    script.src = "https://cdn.jsdelivr.net/npm/zeroagent@latest/dist/index.js";
+    script.src = "https://cdn.jsdelivr.net/npm/@zeroagent/js@latest/dist/index.js";
     script.onload = function () {
 
         Zeroagent("<YOUR_APP_ID>", "<YOUR_APP_KEY>");
