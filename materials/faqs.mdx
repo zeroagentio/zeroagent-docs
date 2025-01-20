@@ -26,3 +26,50 @@ Having trouble? Try these steps:
 We currently support a limited number of applications, but we're working to add more soon. In the meantime, our [Support Team](mailto:support@zeroagent.io) is here to help.
 
 </Accordion>
+
+<Accordion title="Troubleshooting: Error adding Zeroagent in Next JS">
+
+If you encounter issues regarding `async/await is not yet supported in Client Components, only Server Components` please use below method.
+
+```js app/layout.tsx
+import Script from "next/script"; 
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+
+      return (
+    <html lang="en" className="">
+      <head>
+        {/* Widget Element */}
+        <Script
+        src="https://cdn.jsdelivr.net/npm/@zeroagent/js@latest/dist/index.js" 
+        async
+        strategy="beforeInteractive"
+      ></Script>
+      <Script
+          id="zeroagent-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              Zeroagent('d9a5be9969274c95b998a611949ec46e', 'kwT5hBdZGr_RykXJTRscOvXBx93QGVoRJfz-EzhZLdo');
+            `,
+          }}          
+        />
+
+      </head>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        {children}
+        
+        {/* Widget Element */}
+      <div id="zeroagent-ai-widget"></div>
+      </body> 
+    </html>
+  );
+}
+```
+</Accordion>
