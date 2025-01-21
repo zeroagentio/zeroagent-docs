@@ -67,6 +67,7 @@
       "group": "Get Started",
       "pages": [
         "overview", 
+        "talk-with-zero",
         "quickstart",
         "use-case",
         "knowledge-base"
