@@ -1,0 +1,57 @@
+---
+title: Wordpress
+sidebarTitle: Wordpress
+description: Connect with wordpress & make your store smarter AI Store Assistant
+icon: wordpress
+---
+
+If you have a online store made of wordpress, you can still integrate it with our Zeroagent and make your store smarter.
+
+## Connecting Wordpress 
+
+<Steps>
+  <Step title="🛠️ Install WPCode Plugin in Wordpress">
+     Login to your `wordpress` account. Select `Plugins` > `Add New Plugin`. Search for `WPCode` in plugins.
+
+     <Frame>   
+    ![wpcode-plugin](/assets/images/wpcode-plugin.png)
+    </Frame>  
+
+  </Step>
+
+  <Step title="⚙️ WP Code Plugin Editor"> 
+Select `Code Snippet` > `Header & Footer`. In this Footer section add the below code snippet. 
+
+<Note>
+Login to your [Zeroagent Console](http://app.zeroagent.io) and copy your **App ID** and **App Key** found in **Settings**.
+</Note>
+  
+```html HTML
+<div id="zeroagent-ai-widget"></div>
+<script src="https://cdn.jsdelivr.net/npm/@zeroagent/js@latest/dist/index.js"></script>
+<script>
+Zeroagent('<YOUR_APP_ID>', '<YOUR_APP_KEY>');
+</script>
+```
+Click on **Save Changes** to see the changes.
+
+<Frame>   
+![wp-plugin-footer](/assets/images/wp-plugin-footer.png)
+</Frame>
+
+  </Step>
+
+   <Step title="✅ AI Store Assistant is Live">    
+Your AI Store Assistant is live and ready to assist customers.
+
+<Frame>   
+![chat-preview](/assets/images/chat-preview.png)
+</Frame>
+
+  </Step>
+</Steps>
+
+
+## Troubleshooting
+
+For any issues or errors, refer to our [FAQ](/materials/change-logs) or contact our [Support Team](mailto:support@zeroagent.io?subject=Feedback).

@@ -77,7 +77,8 @@
       "group": "Online Store",
       "pages": [ 
         "store/shopify",
-        "store/custom-store"
+        "store/custom-store",
+        "store/wordpress"
       ]
     },
     {
