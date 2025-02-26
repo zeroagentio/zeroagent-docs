@@ -66,11 +66,20 @@
     {
       "group": "Get Started",
       "pages": [
-        "overview", 
-        "talk-with-zero",
+        "overview",  
+        "ai-shopping",
         "quickstart",
-        "use-case",
-        "knowledge-base"
+        "use-case"
+      ]
+    },    
+    {
+      "group": "Features",
+      "pages": [ 
+        "features/talk-with-zero",
+        "features/knowledge-base",
+        "features/analytics",
+        "features/ai-search",
+        "features/ai-support"
       ]
     },
     {
